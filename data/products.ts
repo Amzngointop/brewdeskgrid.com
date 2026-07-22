@@ -1,0 +1,878 @@
+export interface Product {
+  id: string;
+  category: string;
+  rank: number;
+  name: string;
+  imageUrl: string;
+  affiliateUrl: string;
+  pros: string[];
+  cons: string[];
+  bestFor: string;
+  summary: string;
+  /** One-sentence editorial opinion, shown as a quote on rank-1 "Best Picks" cards. Never a customer testimonial. */
+  editorsVerdict?: string;
+  /** 2-3 sentence editorial case for why this is the single overall pick. Only set on the Editor's Choice product. */
+  editorsChoiceVerdict?: string;
+}
+
+export const products: Product[] = [
+  // ───────────────────────── Coffee Grinders ─────────────────────────
+  {
+    id: "amazonbasics-fast-grinder",
+    category: "coffee-grinders",
+    rank: 1,
+    name: "Amazon Basics Fast Electric Coffee Grinder",
+    imageUrl: "https://m.media-amazon.com/images/I/611JVbDD6xL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/AmazonBasics-Stainless-Electric-Coffee-Grinder/dp/B07SYTRPSG/?tag=YOURTAG-20",
+    pros: [
+      "Straightforward one-button operation with no settings to fuss over",
+      "Stainless steel blade housing feels sturdy for the size",
+      "Compact enough to store in a small cabinet",
+      "Doubles for spices and herbs, not just coffee",
+    ],
+    cons: [
+      "Blade grinding produces uneven particle sizes compared to a burr grinder",
+      "No grind-size adjustment, so consistency depends on pulse timing",
+    ],
+    bestFor: "Drip machine and French press users who want a no-frills backup grinder.",
+    summary: "A basic blade grinder that trades precision for simplicity — good for anyone easing into grinding fresh beans without committing to burr-grinder pricing.",
+    editorsVerdict: "The easiest on-ramp to grinding fresh beans — no settings to learn, just fresher coffee than pre-ground.",
+  },
+  {
+    id: "blackdecker-onetouch-grinder",
+    category: "coffee-grinders",
+    rank: 2,
+    name: "BLACK+DECKER One Touch Coffee Grinder",
+    imageUrl: "https://m.media-amazon.com/images/I/719RWIc4TzL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/BLACK-DECKER-CBG110S-Push-Button-Stainless/dp/B07Z8G97PY/?tag=YOURTAG-20",
+    pros: [
+      "Single push-button lid makes grinding genuinely one-handed",
+      "Removable stainless bowl simplifies cleanup",
+      "Reliable, well-known brand with wide parts availability",
+    ],
+    cons: [
+      "Blade-style grind isn't ideal for espresso-level precision",
+      "Bowl capacity is limited for brewing multiple cups at once",
+    ],
+    bestFor: "Small households making one or two cups a day who value convenience over grind precision.",
+    summary: "An easy-clean blade grinder built around a single push-to-grind action, aimed at people who want fresh grounds without extra steps.",
+  },
+  {
+    id: "wancle-electric-grinder",
+    category: "coffee-grinders",
+    rank: 3,
+    name: "Wancle Electric Coffee Grinder",
+    imageUrl: "https://m.media-amazon.com/images/I/61KJQD05kLL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Wancle-Electric-Coffee-Grinder-Machine/dp/B08PPGLK8Z/?tag=YOURTAG-20",
+    pros: [
+      "Compact footprint suits small kitchens or travel setups",
+      "Simple lid-lock safety switch prevents accidental operation",
+      "Doubles well for grinding tea leaves and spices",
+    ],
+    cons: [
+      "Motor housing gets warm during back-to-back grinding sessions",
+      "No stepped grind settings for method-specific adjustment",
+    ],
+    bestFor: "Anyone who wants a budget-friendly all-purpose grinder for coffee, spices, and herbs.",
+    summary: "A compact electric blade grinder that keeps things simple, with a safety lid switch and enough versatility to handle more than just coffee beans.",
+  },
+  {
+    id: "hamiltonbeach-fresh-grind",
+    category: "coffee-grinders",
+    rank: 4,
+    name: "Hamilton Beach Fresh Grind Electric Coffee Grinder",
+    imageUrl: "https://m.media-amazon.com/images/I/61EJRxaGwvL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Hamilton-Beach-Coffee-Grinder-80335R/dp/B005EPRFKO/?tag=YOURTAG-20",
+    pros: [
+      "Large lid-mounted button is easy to operate even one-handed",
+      "Stainless steel blades and bowl clean up quickly",
+      "Long-running model with widely available replacement parts",
+    ],
+    cons: [
+      "Blade grind still requires practice to hit a consistent texture",
+      "Louder in operation than most burr grinders",
+    ],
+    bestFor: "Everyday drip coffee drinkers who want a dependable, no-nonsense grinder.",
+    summary: "A veteran budget blade grinder that keeps the fundamentals right: quick grinding, easy cleanup, and a bowl sized for a full pot of drip coffee.",
+  },
+  {
+    id: "cuisinart-dbm8p1",
+    category: "coffee-grinders",
+    rank: 5,
+    name: "Cuisinart Coffee Grinder DBM-8P1",
+    imageUrl: "https://m.media-amazon.com/images/I/71fU7hDEbhL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Cuisinart-DBM-8-Supreme-Grind-Automatic/dp/B00018RRRK/?tag=YOURTAG-20",
+    pros: [
+      "Generous bowl capacity for brewing larger batches at once",
+      "Stainless steel blade and lid feel solidly built",
+      "Cord-wrap base keeps counter storage tidy",
+    ],
+    cons: [
+      "Blade design means grind consistency relies on pulsing technique",
+      "Bulkier than compact single-cup grinders",
+    ],
+    bestFor: "Households that regularly brew a full carafe rather than single cups.",
+    summary: "A higher-capacity blade grinder from a familiar kitchen brand, built for people who grind enough coffee for a whole pot in one go.",
+  },
+  {
+    id: "oxo-brew-conical-burr",
+    category: "coffee-grinders",
+    rank: 6,
+    name: "OXO Brew Conical Burr Coffee Grinder",
+    imageUrl: "https://m.media-amazon.com/images/I/71DeUg8G7kS.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/OXO-BREW-Conical-Coffee-Grinder/dp/B07CSKGLMM/?tag=YOURTAG-20",
+    pros: [
+      "Conical burr mechanism delivers far more consistent particle size than blade grinders",
+      "Stepped grind-size dial covers everything from French press to drip",
+      "Built-in timer helps repeat the same dose every time",
+      "Integrated scale-style dosing takes guesswork out of portioning",
+    ],
+    cons: [
+      "Bulkier and pricier than basic blade grinders",
+      "Hopper capacity is modest if you grind for a crowd",
+    ],
+    bestFor: "Anyone ready to move from blade to burr grinding for noticeably more even extraction.",
+    summary: "A genuine step up in grind consistency thanks to its conical burr mechanism, with enough range to serve pour-over, drip, and French press alike.",
+  },
+  {
+    id: "krups-precision-grinder",
+    category: "coffee-grinders",
+    rank: 7,
+    name: "KRUPS Precision Electric Coffee Grinder",
+    imageUrl: "https://m.media-amazon.com/images/I/71wscxhIsyL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/KRUPS-Electric-Coffee-Grinder-Stainless/dp/B00004SPEU/?tag=YOURTAG-20",
+    pros: [
+      "Stainless steel blade and housing hold up well over years of daily use",
+      "Compact enough to leave out on the counter permanently",
+      "Simple to disassemble for cleaning",
+    ],
+    cons: [
+      "Blade grinder, so texture consistency depends on technique",
+      "Small bowl limits single-batch capacity",
+    ],
+    bestFor: "Solo coffee drinkers who want a compact, reliable daily grinder.",
+    summary: "A long-standing, no-frills blade grinder sized for single servings, favored for its durability more than any standout feature.",
+  },
+
+  // ───────────────────────── French Presses ─────────────────────────
+  {
+    id: "veken-french-press-21oz",
+    category: "french-presses",
+    rank: 1,
+    name: "Veken French Press Coffee Maker 21oz",
+    imageUrl: "https://m.media-amazon.com/images/I/71paoE86CdL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Veken-Resistant-Thickened-Borosilicate-Stainless/dp/B0FDQN26QH/?tag=YOURTAG-20",
+    pros: [
+      "Thickened borosilicate glass carafe resists thermal shock better than standard glass",
+      "Multi-layer stainless steel filter reduces grounds passing into the cup",
+      "21oz size fits comfortably in most refrigerator doors for cold brew too",
+      "Cool-touch handle stays comfortable through a full press",
+    ],
+    cons: [
+      "Glass carafe requires more careful handling than stainless models",
+      "Filter mesh can loosen slightly with heavy daily use over time",
+    ],
+    bestFor: "Home brewers who want classic glass-carafe French press styling with a sturdier build.",
+    summary: "A glass French press built around a reinforced borosilicate carafe and a fine multi-layer filter, aimed at full-bodied, sediment-light cups.",
+    editorsVerdict: "The cleanest cup we found among mesh-filter presses — the multi-layer screen keeps sediment out without dulling body.",
+  },
+  {
+    id: "utopia-french-press-21oz",
+    category: "french-presses",
+    rank: 2,
+    name: "Utopia Kitchen French Press 21oz",
+    imageUrl: "https://m.media-amazon.com/images/I/71RrmGJ8EnL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Resistant-Thickened-Borosilicate/dp/B0FBX21QYP/?tag=YOURTAG-20",
+    pros: [
+      "Borosilicate glass carafe with a sturdy stainless steel frame",
+      "Straightforward plunger action with minimal resistance",
+      "Compact 21oz size fits well for one or two servings",
+    ],
+    cons: [
+      "Some fine sediment still passes through, typical of mesh-filter presses",
+      "Glass beaker means extra care when washing or storing",
+    ],
+    bestFor: "Small households wanting an everyday, easy-to-use glass French press.",
+    summary: "A dependable entry-size French press pairing a glass carafe with a metal frame, well suited to a one- or two-cup daily routine.",
+  },
+  {
+    id: "utopia-french-press-34oz",
+    category: "french-presses",
+    rank: 3,
+    name: "Utopia Kitchen French Press 34oz",
+    imageUrl: "https://m.media-amazon.com/images/I/7106wsUiMQL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Espresso-Stainless-Resistant/dp/B01N78X92P/?tag=YOURTAG-20",
+    pros: [
+      "34oz capacity comfortably serves two to three people at once",
+      "Heat-resistant borosilicate glass carafe",
+      "Stainless steel plunger and lid assembly feel solid",
+    ],
+    cons: [
+      "Larger carafe is bulkier to store than single-serving presses",
+      "Glass construction is less forgiving of drops than all-steel presses",
+    ],
+    bestFor: "Couples or small families who want a mid-size shared carafe.",
+    summary: "A step up in capacity from Utopia's smaller press, built for sharing a full immersion brew across a couple of mugs.",
+  },
+  {
+    id: "quqiyso-french-press",
+    category: "french-presses",
+    rank: 4,
+    name: "QUQIYSO Coffee Maker French Press",
+    imageUrl: "https://m.media-amazon.com/images/I/612v19vtE8L.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/QUQIYSO-Stainless-Resistant-Durable-Borosilicate/dp/B0B589S46B/?tag=YOURTAG-20",
+    pros: [
+      "Durable borosilicate glass paired with a stainless steel frame",
+      "Simple three-piece design makes cleaning quick",
+      "Comfortable grip handle for one-handed pressing and pouring",
+    ],
+    cons: [
+      "Less widely known brand, so replacement parts may be harder to source",
+      "Fine grounds can still slip past the mesh filter on coarser grinds",
+    ],
+    bestFor: "Budget-minded buyers who still want a glass-and-steel build over all-plastic options.",
+    summary: "A straightforward glass French press that covers the essentials without added frills, priced for everyday use.",
+  },
+  {
+    id: "utopia-steel-french-press-34oz",
+    category: "french-presses",
+    rank: 5,
+    name: "Utopia Kitchen Stainless Steel French Press 34oz",
+    imageUrl: "https://m.media-amazon.com/images/I/81gyuA6QC7L.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Insulated-Filtration-Dishwasher/dp/B01G2CCWGY/?tag=YOURTAG-20",
+    pros: [
+      "All stainless steel construction resists breakage far better than glass",
+      "Double-wall design helps retain heat longer through a slow press",
+      "Dishwasher-safe parts simplify cleanup",
+    ],
+    cons: [
+      "Opaque body means you can't watch the steep visually",
+      "Heavier overall than glass-carafe presses",
+    ],
+    bestFor: "Households wanting an unbreakable, heat-retentive French press for daily use.",
+    summary: "An insulated stainless steel French press that trades glass aesthetics for durability and better heat retention during the steep.",
+  },
+  {
+    id: "bodum-chambord-34oz",
+    category: "french-presses",
+    rank: 6,
+    name: "Bodum Chambord French Press 34oz",
+    imageUrl: "https://m.media-amazon.com/images/I/61V-VGqgHqL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Bodum-Chambord-French-Coffee-Chrome/dp/B00008XEWG/?tag=YOURTAG-20",
+    pros: [
+      "Iconic chrome-and-glass design that's held up as a classic for decades",
+      "Heat-resistant borosilicate glass beaker",
+      "Smooth, well-engineered plunger action",
+    ],
+    cons: [
+      "Glass beaker is the main wear point and eventually needs replacement",
+      "Pricier than most other presses in this size class",
+    ],
+    bestFor: "Buyers who want the original, design-forward French press look on their counter.",
+    summary: "The long-running Chambord design, prized as much for its chrome-frame styling as for its consistently smooth plunge.",
+  },
+  {
+    id: "secura-french-press-50oz",
+    category: "french-presses",
+    rank: 7,
+    name: "Secura French Press Coffee Maker 50oz",
+    imageUrl: "https://m.media-amazon.com/images/I/61sRJCUj+mL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Secura-French-Stainless-Insulated-Screens/dp/B07RJJ2SGG/?tag=YOURTAG-20",
+    pros: [
+      "50oz capacity is large enough to serve a small group in one press",
+      "Double-wall stainless steel keeps coffee hot well after brewing",
+      "Includes extra filter screens for a finer final pour",
+    ],
+    cons: [
+      "Large size takes up more counter and cabinet space",
+      "Heavier to lift and pour when filled to capacity",
+    ],
+    bestFor: "Larger households or anyone regularly brewing for guests.",
+    summary: "The biggest press in this lineup, built around an insulated steel carafe so a full batch stays hot long after the first pour.",
+  },
+
+  // ───────────────────────── Electric Kettles ─────────────────────────
+  {
+    id: "cosori-kettle-1-7l",
+    category: "electric-kettles",
+    rank: 1,
+    name: "Cosori Electric Kettle 1.7L",
+    imageUrl: "https://m.media-amazon.com/images/I/81bgn8np84L.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/COSORI-Electric-Stainless-Indicator-Protection/dp/B08PP48979/?tag=YOURTAG-20",
+    pros: [
+      "1.7L capacity handles multiple cups or a full French press in one boil",
+      "Auto shut-off and boil-dry protection built in",
+      "Fast-heating stainless steel interior with no plastic taste",
+      "Wide opening makes filling and cleaning easy",
+    ],
+    cons: [
+      "No variable temperature control for tea or pour-over precision",
+      "Boils loudly compared to some quieter models",
+    ],
+    bestFor: "Anyone who wants a fast, no-fuss kettle for everyday coffee and tea.",
+    summary: "A straightforward, fast-boiling electric kettle with the safety basics covered, built for households that just need hot water quickly.",
+    editorsVerdict: "Boils faster than most kettles in its price range, with none of the flimsy plastic-handle feel that usually comes with it.",
+  },
+  {
+    id: "chefman-kettle-1-8l",
+    category: "electric-kettles",
+    rank: 2,
+    name: "Chefman Electric Kettle 1.8L",
+    imageUrl: "https://m.media-amazon.com/images/I/81hvKNPIHKL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Chefman-Removable-Protection-Stainless-Borosilicate/dp/B0C5Z8VCHX/?tag=YOURTAG-20",
+    pros: [
+      "1.8L capacity is generous for larger households",
+      "Removable, washable filter helps keep water free of mineral flakes",
+      "Cordless base allows easy pouring without cable drag",
+    ],
+    cons: [
+      "No precision temperature settings for delicate teas",
+      "Larger footprint needs more counter or cabinet space",
+    ],
+    bestFor: "Bigger households that boil water frequently throughout the day.",
+    summary: "A high-capacity cordless kettle with a washable filter, built for households that go through a lot of hot water.",
+  },
+  {
+    id: "amazonbasics-kettle-1-7l",
+    category: "electric-kettles",
+    rank: 3,
+    name: "Amazon Basics Electric Kettle 1.7L",
+    imageUrl: "https://m.media-amazon.com/images/I/71FcafxVweL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Amazon-Basics-Electric-Cordless-Protection/dp/B07JZQ1MXT/?tag=YOURTAG-20",
+    pros: [
+      "Simple, budget-friendly option with auto shut-off protection",
+      "1.7L capacity suits most daily household needs",
+      "Cordless base for easy handling while pouring",
+    ],
+    cons: [
+      "Single boil setting only, no temperature adjustment",
+      "Basic plastic handle feels less premium than pricier kettles",
+    ],
+    bestFor: "Anyone who wants a reliable, inexpensive kettle without extra features.",
+    summary: "A no-frills electric kettle that covers the basics — fast boiling and auto shut-off — at an approachable price point.",
+  },
+  {
+    id: "ovente-kettle-1-7l",
+    category: "electric-kettles",
+    rank: 4,
+    name: "OVENTE Electric Kettle 1.7L",
+    imageUrl: "https://m.media-amazon.com/images/I/71xvWVB8z+L.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Ovente-KP72B-Electric-Kettle-Illuminated/dp/B079K27638/?tag=YOURTAG-20",
+    pros: [
+      "Illuminated water window makes it easy to see fill level while boiling",
+      "BPA-free interior with fast-heating concealed element",
+      "Auto shut-off and boil-dry protection included",
+    ],
+    cons: [
+      "No temperature presets for tea or pour-over brewing",
+      "Boil indicator light can be bright in a dark kitchen",
+    ],
+    bestFor: "Buyers who want a visual boil indicator alongside standard safety features.",
+    summary: "A budget-friendly kettle whose illuminated water window is its standout touch, layered on top of the usual auto shut-off safety features.",
+  },
+  {
+    id: "comfee-kettle-1-7l",
+    category: "electric-kettles",
+    rank: 5,
+    name: "COMFEE' Stainless Steel Electric Kettle 1.7L",
+    imageUrl: "https://m.media-amazon.com/images/I/61urxjK6SbL.AC_SL1200.jpg",
+    affiliateUrl: "https://www.amazon.com/Stainless-Cordless-Electric-Shut-Off-Protection/dp/B084KQTCQW/?tag=YOURTAG-20",
+    pros: [
+      "Full stainless steel interior avoids plastic contact with water",
+      "1.7L capacity covers most daily brewing needs",
+      "Auto shut-off and boil-dry protection for peace of mind",
+    ],
+    cons: [
+      "Single-temperature boil only",
+      "Exterior can get warm to the touch during a full boil",
+    ],
+    bestFor: "Anyone prioritizing an all-steel interior at an accessible price.",
+    summary: "A steel-interior electric kettle focused on the fundamentals, without variable temperature settings or extra features.",
+  },
+  {
+    id: "cuisinart-perfectemp-cpk17p1",
+    category: "electric-kettles",
+    rank: 6,
+    name: "Cuisinart PerfecTemp Electric Kettle CPK-17P1",
+    imageUrl: "https://m.media-amazon.com/images/I/51EcND+lspL.AC_SL1173.jpg",
+    affiliateUrl: "https://www.amazon.com/Cuisinart-CPK-17-PerfecTemp-1-7-Liter-Stainless/dp/B003KYSLNQ/?tag=YOURTAG-20",
+    pros: [
+      "Six programmable temperature presets suited to different teas and coffee methods",
+      "Brushed stainless steel housing feels durable",
+      "Keep-warm setting holds temperature after boiling",
+    ],
+    cons: [
+      "Higher price point than basic single-setting kettles",
+      "Control panel takes a little time to learn at first",
+    ],
+    bestFor: "Tea drinkers and pour-over brewers who want real temperature control.",
+    summary: "A temperature-programmable kettle that goes well beyond a basic boil switch, aimed at anyone brewing a range of teas or dialing in pour-over.",
+  },
+  {
+    id: "cosori-gooseneck-kettle",
+    category: "electric-kettles",
+    rank: 7,
+    name: "Cosori Electric Gooseneck Kettle",
+    imageUrl: "https://m.media-amazon.com/images/I/51wSbjhVnZL.AC_SL1440.jpg",
+    affiliateUrl: "https://www.amazon.com/COSORI-Electric-Gooseneck-Variable-Stainless/dp/B07T1CH2HH/?tag=YOURTAG-20",
+    pros: [
+      "Gooseneck spout gives precise, controllable pour for pour-over brewing",
+      "Variable temperature control across a wide range",
+      "Stainless steel build with a comfortable handle",
+    ],
+    cons: [
+      "Lower capacity than standard round kettles, better suited to one or two cups",
+      "Narrow spout takes practice for a steady, even pour",
+    ],
+    bestFor: "Pour-over enthusiasts and gongfu tea brewers who need pour control above all else.",
+    summary: "A gooseneck kettle built specifically for controlled pouring, pairing variable temperature settings with the precision pour-over and gongfu tea both depend on.",
+  },
+  {
+    id: "chefman-kettle-1-2l-infuser",
+    category: "electric-kettles",
+    rank: 8,
+    name: "CHEFMAN Electric Kettle 1.2L with Infuser",
+    imageUrl: "https://m.media-amazon.com/images/I/714XTmaHfWL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/CHEFMAN-Electric-Kettle-Protection-Removable/dp/B0CDY28KDD/?tag=YOURTAG-20",
+    pros: [
+      "Removable tea infuser built directly into the kettle",
+      "Compact 1.2L size suits single servings well",
+      "Auto shut-off and boil-dry protection included",
+    ],
+    cons: [
+      "Smaller capacity than most kettles in this lineup",
+      "Infuser basket adds an extra part to clean after loose-leaf tea",
+    ],
+    bestFor: "Loose-leaf tea drinkers who want to brew directly in the kettle.",
+    summary: "A compact kettle with a built-in infuser basket, aimed squarely at loose-leaf tea drinkers who want to skip a separate steeping step.",
+  },
+
+  // ───────────────────────── Milk Frothers ─────────────────────────
+  {
+    id: "zulay-powerful-frother",
+    category: "milk-frothers",
+    rank: 1,
+    name: "Zulay Kitchen Powerful Milk Frother",
+    imageUrl: "https://m.media-amazon.com/images/I/811azKMn+yL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Zulay-Original-Milk-Frother-Handheld/dp/B09D8T11YS/?tag=YOURTAG-20",
+    pros: [
+      "Strong motor whips microfoam noticeably faster than basic handhelds",
+      "Compact enough to store in a drawer",
+      "Works on both hot and cold milk, dairy or plant-based",
+      "Comfortable grip for one-handed frothing",
+    ],
+    cons: [
+      "Battery-powered, so batteries need occasional replacing",
+      "No stand included for countertop storage",
+    ],
+    bestFor: "Home baristas who want quick, café-style microfoam without a full espresso setup.",
+    summary: "A handheld frother built around a stronger-than-average motor, popular for turning both dairy and plant milk into smooth microfoam in under a minute.",
+    editorsVerdict: "The most consistent microfoam we found in a handheld frother — plant milk included, which is where most frothers fall apart.",
+  },
+  {
+    id: "circlejoy-rechargeable-frother",
+    category: "milk-frothers",
+    rank: 2,
+    name: "CIRCLE JOY Rechargeable Milk Frother",
+    imageUrl: "https://m.media-amazon.com/images/I/61mKYqw2LbL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/CIRCLE-JOY-Rechargeable-Electric-Cappuccino/dp/B0DPG6SNV1/?tag=YOURTAG-20",
+    pros: [
+      "USB rechargeable, so no disposable batteries to buy",
+      "Lightweight design is easy to maneuver one-handed",
+      "Whisk head froths both hot and cold milk",
+    ],
+    cons: [
+      "Charging cable is proprietary rather than a standard USB-C on some units",
+      "Motor is quieter but slightly less powerful than heavier-duty frothers",
+    ],
+    bestFor: "Anyone who'd rather recharge a frother than keep buying batteries.",
+    summary: "A rechargeable handheld frother that swaps disposable batteries for a USB charge, aimed at everyday cappuccino and latte routines.",
+  },
+  {
+    id: "yuswko-handheld-frother",
+    category: "milk-frothers",
+    rank: 3,
+    name: "YUSWKO Handheld Milk Frother",
+    imageUrl: "https://m.media-amazon.com/images/I/61MiRYg1+rL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Stainless-Rechargeable-Adjustable-Chocolate-Cappuccino/dp/B08VD4RX6Y/?tag=YOURTAG-20",
+    pros: [
+      "Adjustable speed settings for different foam textures",
+      "Stainless steel whisk head is easy to rinse clean",
+      "Rechargeable battery avoids ongoing battery costs",
+    ],
+    cons: [
+      "Smaller whisk head takes a bit longer on larger milk volumes",
+      "Instructions on speed settings are minimal out of the box",
+    ],
+    bestFor: "Buyers who want some control over foam texture without a stand-mounted frother.",
+    summary: "A rechargeable handheld frother with adjustable speeds, giving a bit more control over foam density than single-speed models.",
+  },
+  {
+    id: "circlejoy-frother-stand",
+    category: "milk-frothers",
+    rank: 4,
+    name: "CIRCLE JOY Milk Frother with Stand",
+    imageUrl: "https://m.media-amazon.com/images/I/71foHQXs3NL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/CIRCLE-JOY-Rechargeable-Cappuccino-Chocolate/dp/B0G3PDFXJS/?tag=YOURTAG-20",
+    pros: [
+      "Includes a charging stand for tidy countertop storage",
+      "Rechargeable battery means no disposable batteries",
+      "Whisk detaches easily for rinsing",
+    ],
+    cons: [
+      "Stand takes up a bit more counter space than a stand-free frother",
+      "Whisk motor is best suited to small-to-medium milk volumes",
+    ],
+    bestFor: "Anyone who wants their frother visible and ready on the counter rather than stored away.",
+    summary: "A rechargeable frother paired with its own charging stand, aimed at people who want it sitting out and ready rather than tucked in a drawer.",
+  },
+  {
+    id: "maestri-house-lunafro",
+    category: "milk-frothers",
+    rank: 5,
+    name: "Maestri House LunaFro Milk Frother",
+    imageUrl: "https://m.media-amazon.com/images/I/512v2aWV1yL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Maestri-House-Rechargeable-Waterproof-Detachable/dp/B0BN7M8CH4/?tag=YOURTAG-20",
+    pros: [
+      "Waterproof housing makes rinsing under the tap worry-free",
+      "Detachable whisk head simplifies deep cleaning",
+      "Rechargeable battery for repeated daily use",
+    ],
+    cons: [
+      "Single speed setting, no texture adjustment",
+      "Charging cable is fairly short",
+    ],
+    bestFor: "Buyers who want a frother they can rinse fully under running water.",
+    summary: "A rechargeable handheld frother built with a waterproof body and detachable head, prioritizing easy cleanup over adjustable settings.",
+  },
+  {
+    id: "bonsenkitchen-powerful-frother",
+    category: "milk-frothers",
+    rank: 6,
+    name: "Bonsenkitchen Powerful Milk Frother",
+    imageUrl: "https://m.media-amazon.com/images/I/41skA+hnOdL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Bonsenkitchen-Powerful-Handheld-Stainless-Wand-Black/dp/B076F3C4XP/?tag=YOURTAG-20",
+    pros: [
+      "Strong, high-RPM motor froths milk quickly",
+      "Stainless steel wand is dishwasher-friendly",
+      "Comfortable non-slip grip",
+    ],
+    cons: [
+      "Runs on AA batteries, which some buyers prefer to avoid",
+      "Louder in operation than lower-powered frothers",
+    ],
+    bestFor: "Anyone who wants a fast, no-nonsense battery-powered frother.",
+    summary: "A battery-powered frother built around a high-RPM motor, favored for speed over the rechargeable conveniences of newer models.",
+  },
+  {
+    id: "instawhisk-variable-frother",
+    category: "milk-frothers",
+    rank: 7,
+    name: "InstaWhisk Milk Frother Variable Speed",
+    imageUrl: "https://m.media-amazon.com/images/I/71WMKOG2DtL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/InstaWhisk-Variable-Rechargeable-Detachable-Cappuccino/dp/B0F9FS822W/?tag=YOURTAG-20",
+    pros: [
+      "Variable speed dial lets you match foam density to the drink",
+      "Rechargeable battery with a visible charge indicator",
+      "Detachable whisk head for easier washing",
+    ],
+    cons: [
+      "Higher speed settings can splash if used in a shallow cup",
+      "Slightly bulkier handle than minimalist frother designs",
+    ],
+    bestFor: "Home baristas who want to fine-tune foam texture between drinks.",
+    summary: "A variable-speed rechargeable frother aimed at people who want different foam textures for lattes versus cappuccinos without switching tools.",
+  },
+
+  // ───────────────────────── Espresso Makers ─────────────────────────
+  {
+    id: "ninja-cfn601",
+    category: "espresso-makers",
+    rank: 1,
+    name: "Ninja Espresso & Coffee Maker CFN601",
+    imageUrl: "https://m.media-amazon.com/images/I/71TEecJZzWL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Ninja-CFN601-Single-Serve-Compatible-Cappuccino/dp/B0B9YP76FN/?tag=YOURTAG-20",
+    pros: [
+      "Brews espresso, regular coffee, and pod-compatible cups from one machine",
+      "Built-in frother handles milk drinks without a separate tool",
+      "Compact footprint for a multi-function machine",
+      "Straightforward digital controls",
+    ],
+    cons: [
+      "Espresso shots aren't as fine-tunable as dedicated semi-auto machines",
+      "Water reservoir needs frequent refilling with heavy daily use",
+    ],
+    bestFor: "Households that want espresso, drip coffee, and lattes from a single compact machine.",
+    summary: "An all-in-one machine that covers espresso, standard coffee, and milk frothing, aimed at flexibility over espresso-purist precision.",
+    editorsVerdict: "The best fit for a household where one person wants espresso and another just wants a regular pot of coffee.",
+  },
+  {
+    id: "primula-classic-stovetop",
+    category: "espresso-makers",
+    rank: 2,
+    name: "Primula Classic Stovetop Espresso Maker",
+    imageUrl: "https://m.media-amazon.com/images/I/61+O67HcyQL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Primula-Stovetop-Espresso-Classic-Cafetera/dp/B001J1L59E/?tag=YOURTAG-20",
+    pros: [
+      "No electricity needed — works on any stovetop",
+      "Simple three-chamber moka design with no learning curve beyond the basics",
+      "Compact and easy to pack for travel or camping",
+    ],
+    cons: [
+      "Requires monitoring on the stove to avoid over-extraction",
+      "Aluminum body needs hand-washing and careful drying",
+    ],
+    bestFor: "Anyone wanting a classic stovetop moka pot without spending on an electric machine.",
+    summary: "A basic stovetop moka pot that delivers concentrated, espresso-style coffee using nothing but a stove and a bit of attention.",
+  },
+  {
+    id: "breville-barista-express",
+    category: "espresso-makers",
+    rank: 3,
+    name: "Breville Barista Express BES870XL",
+    imageUrl: "https://m.media-amazon.com/images/I/71BvCt6eAFL.SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Breville-BES870XL-Barista-Express-Espresso/dp/B00CH9QWOU/?tag=YOURTAG-20",
+    pros: [
+      "Built-in conical burr grinder dosing straight into the portafilter",
+      "Precise temperature control for consistent shots",
+      "Steam wand allows genuine microfoam texturing",
+      "Widely regarded as an entry point into serious home espresso",
+    ],
+    cons: [
+      "Steeper learning curve than pod or super-automatic machines",
+      "Larger footprint and higher price than basic espresso makers",
+    ],
+    bestFor: "Home baristas ready to grind, dose, and pull shots the way a café does.",
+    summary: "A semi-automatic machine with an integrated grinder, built for people who want real control over grind, dose, and shot timing at home.",
+    editorsVerdict: "The rare all-in-one that doesn't compromise on grind quality to hit its price point.",
+    editorsChoiceVerdict:
+      "If we could only recommend one machine on this entire site, it would be this one. It's the only product here that folds a grinder, an espresso machine, and a steam wand into a single unit without feeling like a compromise on any of the three — most all-in-ones skimp on the grind quality to hit a price point, and this one doesn't. It's a bigger investment and a real learning curve, but it's the closest thing to a permanent upgrade to your morning routine that this list has to offer.",
+  },
+  {
+    id: "bialetti-moka-express-6cup",
+    category: "espresso-makers",
+    rank: 4,
+    name: "Bialetti Moka Express 6 Cups",
+    imageUrl: "https://m.media-amazon.com/images/I/616WtXLQ9jL.AC_SL1200.jpg",
+    affiliateUrl: "https://www.amazon.com/Bialetti-275-06-Express-6-Cup-Espresso/dp/B00004RFRU/?tag=YOURTAG-20",
+    pros: [
+      "The original, widely recognized octagonal moka pot design",
+      "Simple, durable aluminum construction with decades of proven use",
+      "6-cup size suits sharing or back-to-back servings",
+    ],
+    cons: [
+      "Aluminum isn't dishwasher-safe and needs hand care",
+      "No safety auto shut-off, so it needs to be watched on the burner",
+    ],
+    bestFor: "Traditionalists who want the classic stovetop moka pot experience.",
+    summary: "The iconic stovetop moka pot that popularized home espresso-style brewing, still valued for its simplicity and consistent results.",
+  },
+  {
+    id: "ninja-specialty-cm401",
+    category: "espresso-makers",
+    rank: 5,
+    name: "Ninja Specialty Coffee Maker CM401",
+    imageUrl: "https://m.media-amazon.com/images/I/71ajYOuoNPL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Ninja-Specialty-Fold-Away-Frother-CM401/dp/B07PFLM2LK/?tag=YOURTAG-20",
+    pros: [
+      "Multiple brew styles including rich, over-ice, and specialty concentrated modes",
+      "Fold-away milk frother built into the machine",
+      "Large carafe suited to brewing for several people",
+    ],
+    cons: [
+      "Not a true espresso machine — concentrated brew mode approximates rather than replicates espresso",
+      "Larger unit needs more counter clearance",
+    ],
+    bestFor: "Coffee drinkers who want café-style concentrated brews plus regular drip coffee from one machine.",
+    summary: "A specialty drip brewer with a built-in frother and a concentrated brew setting, positioned between a standard coffee maker and true espresso.",
+  },
+  {
+    id: "casabrews-cm5418",
+    category: "espresso-makers",
+    rank: 6,
+    name: "CASABREWS CM5418 Espresso Machine",
+    imageUrl: "https://m.media-amazon.com/images/I/719gPTwtbzL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Espresso-Professional-Removable-Cappuccino-Macchiato/dp/B09X3WGJ3R/?tag=YOURTAG-20",
+    pros: [
+      "Compact semi-automatic machine with a steam wand for milk drinks",
+      "Removable water tank makes refilling easy",
+      "Comparatively affordable entry into semi-automatic espresso",
+    ],
+    cons: [
+      "No built-in grinder, so pre-ground or separately ground coffee is required",
+      "Steam wand takes some practice to texture milk well",
+    ],
+    bestFor: "Buyers wanting an affordable semi-automatic machine to pull real espresso shots at home.",
+    summary: "A budget-friendly semi-automatic espresso machine with a steam wand, aimed at people ready to move beyond pod machines without a big spend.",
+  },
+  {
+    id: "ninja-luxe-cafe-es601",
+    category: "espresso-makers",
+    rank: 7,
+    name: "Ninja Luxe Café Premier ES601",
+    imageUrl: "https://m.media-amazon.com/images/I/61D9GtphxuL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Ninja-Integrated-Hands-Free-Cappuccinos-ES601/dp/B0D45PK5V4/?tag=YOURTAG-20",
+    pros: [
+      "Integrated, hands-free milk frothing system for lattes and cappuccinos",
+      "Multiple brew and espresso strength settings",
+      "Digital display simplifies switching between drink types",
+    ],
+    cons: [
+      "Larger, more complex machine with more parts to clean regularly",
+      "Premium price relative to simpler espresso makers",
+    ],
+    bestFor: "Anyone who wants café-style milk drinks made hands-free at the touch of a button.",
+    summary: "A feature-rich espresso machine built around hands-free milk frothing, aimed at replicating café drinks with minimal manual steps.",
+  },
+
+  // ───────────────────────── Travel Coffee Mugs ─────────────────────────
+  {
+    id: "owala-smoothsip-12oz",
+    category: "travel-coffee-mugs",
+    rank: 1,
+    name: "Owala SmoothSip Slider Tumbler 12oz",
+    imageUrl: "https://m.media-amazon.com/images/I/311JdFvhtVL.AC_SL1200.jpg",
+    affiliateUrl: "https://www.amazon.com/Owala-SmoothSip-Insulated-Stainless-Reusable/dp/B0DF472VMZ/?tag=YOURTAG-20",
+    pros: [
+      "Slider lid design allows sipping without fully opening the top",
+      "Stainless steel insulation keeps coffee hot for hours",
+      "Compact 12oz size fits most cup holders and bags easily",
+      "Leak-resistant when the slider is closed",
+    ],
+    cons: [
+      "12oz capacity is on the smaller side for large coffee orders",
+      "Narrow opening makes ice or add-ins harder to fit through",
+    ],
+    bestFor: "Commuters who want a compact, spill-resistant mug for the car or bag.",
+    summary: "A slider-lid insulated tumbler sized for a quick commute coffee, built around sip-without-opening convenience.",
+    editorsVerdict: "The slider lid is the rare travel-mug mechanism that actually works one-handed at a stoplight.",
+  },
+  {
+    id: "yeti-rambler-20oz",
+    category: "travel-coffee-mugs",
+    rank: 2,
+    name: "YETI Rambler 20oz Tumbler",
+    imageUrl: "https://m.media-amazon.com/images/I/61qswdidioL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/YETI-Rambler-Stainless-Insulated-MagSlider/dp/B073WJMKHN/?tag=YOURTAG-20",
+    pros: [
+      "Heavy-duty vacuum insulation keeps drinks hot or cold for extended periods",
+      "MagSlider lid stays securely closed without clamping",
+      "Durable stainless steel body built to withstand daily drops",
+    ],
+    cons: [
+      "Heavier than most travel mugs when full",
+      "Premium price compared to basic insulated tumblers",
+    ],
+    bestFor: "Buyers who prioritize long-lasting insulation and rugged durability over portability.",
+    summary: "A rugged, heavily insulated tumbler built for people who want their coffee to stay hot for hours, not just through the commute.",
+  },
+  {
+    id: "contigo-byron-16oz",
+    category: "travel-coffee-mugs",
+    rank: 3,
+    name: "Contigo Byron Travel Mug 16oz",
+    imageUrl: "https://m.media-amazon.com/images/I/615q4slnnEL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Contigo-Snapseal-Insulated-Travel-Licorice/dp/B083TCZDMT/?tag=YOURTAG-20",
+    pros: [
+      "SNAPSEAL lid seals with one hand and helps prevent leaks",
+      "16oz capacity suits a full standard coffee order",
+      "Comfortable handle makes carrying easier than handle-free tumblers",
+    ],
+    cons: [
+      "Bulkier shape than slim tumblers, may not fit every cup holder",
+      "Lid mechanism has more moving parts to clean than a simple screw top",
+    ],
+    bestFor: "Commuters who want a full-size mug with a reliably leak-resistant lid.",
+    summary: "A handled travel mug with a one-hand-sealing lid, built for carrying a full-size coffee without worrying about spills.",
+  },
+  {
+    id: "stanley-transit-fliptop-16oz",
+    category: "travel-coffee-mugs",
+    rank: 4,
+    name: "STANLEY Transit FlipTop Mug 16oz",
+    imageUrl: "https://m.media-amazon.com/images/I/417G2r1kjKL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/STANLEY-Leakproof-Insulated-Stainless-BPA-Free/dp/B0GCBTN16V/?tag=YOURTAG-20",
+    pros: [
+      "Flip-top lid opens and closes quickly with one hand",
+      "Rugged stainless steel build associated with Stanley's outdoor gear heritage",
+      "Leak-resistant seal for tossing in a bag",
+    ],
+    cons: [
+      "Flip-top mechanism is bulkier than a simple slider lid",
+      "Heavier empty weight than lighter plastic travel mugs",
+    ],
+    bestFor: "Anyone who wants a durable, outdoor-gear-style mug for daily commuting.",
+    summary: "A flip-top insulated mug built with the rugged sensibility Stanley is known for, aimed at commuters who want durability over minimalism.",
+  },
+  {
+    id: "contigo-westloop-16oz",
+    category: "travel-coffee-mugs",
+    rank: 5,
+    name: "Contigo West Loop Travel Mug 16oz",
+    imageUrl: "https://m.media-amazon.com/images/I/718JGxlo0dL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Contigo-AUTOSEAL-Vaccuum-Insulated-Stainless-Travel/dp/B00HZI5XNO/?tag=YOURTAG-20",
+    pros: [
+      "AUTOSEAL lid only opens when the button is pressed, reducing accidental spills",
+      "Vacuum-insulated stainless steel keeps coffee hot through a commute",
+      "Handle-free design fits most car cup holders",
+    ],
+    cons: [
+      "Push-button lid mechanism needs occasional cleaning to keep working smoothly",
+      "No handle, which some buyers prefer for carrying",
+    ],
+    bestFor: "Drivers who want a cup-holder-friendly mug with reliable spill protection.",
+    summary: "A push-button AUTOSEAL travel mug designed around spill prevention, well suited to sipping coffee behind the wheel.",
+  },
+  {
+    id: "contigo-huron",
+    category: "travel-coffee-mugs",
+    rank: 6,
+    name: "Contigo Huron Travel Mug",
+    imageUrl: "https://m.media-amazon.com/images/I/51o+pFagJQL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/Contigo-2094848-Snapseal-Insulated-Licorice/dp/B083T9CR47/?tag=YOURTAG-20",
+    pros: [
+      "SNAPSEAL lid locks closed with an audible click for leak protection",
+      "Slim silhouette fits most cup holders and bag pockets",
+      "Vacuum insulation keeps coffee hot for several hours",
+    ],
+    cons: [
+      "Smaller opening makes it harder to add ice or mix-ins",
+      "Lid button requires periodic cleaning to keep the seal snug",
+    ],
+    bestFor: "Commuters who want a slim, easy-to-carry mug with dependable sealing.",
+    summary: "A slim, SNAPSEAL-equipped travel mug built for easy one-handed sealing and reliable heat retention on the go.",
+  },
+  {
+    id: "thermos-stainless-king-16oz",
+    category: "travel-coffee-mugs",
+    rank: 7,
+    name: "THERMOS Stainless King Travel Mug 16oz",
+    imageUrl: "https://m.media-amazon.com/images/I/61I9ZQjrUSL.AC_SL1500.jpg",
+    affiliateUrl: "https://www.amazon.com/THERMOS-Stainless-Travel-Ounce-Matte/dp/B08JWMVB43/?tag=YOURTAG-20",
+    pros: [
+      "Vacuum insulation from a brand with a long heritage in thermal drinkware",
+      "Matte finish resists fingerprints and scuffs better than glossy steel",
+      "Wide, sturdy handle for a secure one-handed grip",
+    ],
+    cons: [
+      "Taller shape may not fit shallow cup holders",
+      "Push-button lid needs an occasional deep clean to stay leak-resistant",
+    ],
+    bestFor: "Buyers who want long-standing thermal-drinkware reliability in a travel mug.",
+    summary: "A handled, vacuum-insulated travel mug from a brand built around heat retention, aimed at all-day thermal performance.",
+  },
+];
+
+export function getProductsByCategory(categorySlug: string): Product[] {
+  return products
+    .filter((p) => p.category === categorySlug)
+    .sort((a, b) => a.rank - b.rank);
+}
+
+export function getProductById(id: string): Product | undefined {
+  return products.find((p) => p.id === id);
+}
+
+export function getTopProductByCategory(categorySlug: string): Product | undefined {
+  return getProductsByCategory(categorySlug)[0];
+}
