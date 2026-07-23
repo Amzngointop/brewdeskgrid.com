@@ -23,7 +23,7 @@ export const products: Product[] = [
     rank: 1,
     name: "Amazon Basics Fast Electric Coffee Grinder",
     imageUrl: "https://m.media-amazon.com/images/I/611JVbDD6xL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/AmazonBasics-Stainless-Electric-Coffee-Grinder/dp/B07SYTRPSG/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/AmazonBasics-Stainless-Electric-Coffee-Grinder/dp/B07SYTRPSG?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=723ef66c1457d58a3578002cfed7495f&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Straightforward one-button operation with no settings to fuss over",
       "Stainless steel blade housing feels sturdy for the size",
@@ -44,7 +44,7 @@ export const products: Product[] = [
     rank: 2,
     name: "BLACK+DECKER One Touch Coffee Grinder",
     imageUrl: "https://m.media-amazon.com/images/I/719RWIc4TzL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/BLACK-DECKER-CBG110S-Push-Button-Stainless/dp/B07Z8G97PY/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/BLACK-DECKER-CBG110S-Push-Button-Stainless/dp/B07Z8G97PY?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=9d71d0f8f9e73bdd31ac9958fa381172&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Single push-button lid makes grinding genuinely one-handed",
       "Removable stainless bowl simplifies cleanup",
@@ -63,7 +63,7 @@ export const products: Product[] = [
     rank: 3,
     name: "Wancle Electric Coffee Grinder",
     imageUrl: "https://m.media-amazon.com/images/I/61KJQD05kLL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Wancle-Electric-Coffee-Grinder-Machine/dp/B08PPGLK8Z/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Wancle-Electric-Coffee-Grinder-Machine/dp/B08PPGLK8Z?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=23bfe1024656c53ee3d8b2007dca4b6d&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Compact footprint suits small kitchens or travel setups",
       "Simple lid-lock safety switch prevents accidental operation",
@@ -82,7 +82,7 @@ export const products: Product[] = [
     rank: 4,
     name: "Hamilton Beach Fresh Grind Electric Coffee Grinder",
     imageUrl: "https://m.media-amazon.com/images/I/61EJRxaGwvL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Hamilton-Beach-Coffee-Grinder-80335R/dp/B005EPRFKO/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Hamilton-Beach-Coffee-Grinder-80335R/dp/B005EPRFKO?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=e3e721e25dee27ffc9ac7a94f0eaf917&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Large lid-mounted button is easy to operate even one-handed",
       "Stainless steel blades and bowl clean up quickly",
@@ -101,7 +101,7 @@ export const products: Product[] = [
     rank: 5,
     name: "Cuisinart Coffee Grinder DBM-8P1",
     imageUrl: "https://m.media-amazon.com/images/I/71fU7hDEbhL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Cuisinart-DBM-8-Supreme-Grind-Automatic/dp/B00018RRRK/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Cuisinart-DBM-8-Supreme-Grind-Automatic/dp/B00018RRRK?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=123a0aa4c35b62c0039819b8cc3ac18d&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Generous bowl capacity for brewing larger batches at once",
       "Stainless steel blade and lid feel solidly built",
@@ -120,7 +120,7 @@ export const products: Product[] = [
     rank: 6,
     name: "OXO Brew Conical Burr Coffee Grinder",
     imageUrl: "https://m.media-amazon.com/images/I/71DeUg8G7kS.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/OXO-BREW-Conical-Coffee-Grinder/dp/B07CSKGLMM/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/OXO-BREW-Conical-Coffee-Grinder/dp/B07CSKGLMM?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=91b18fea518328510f4e56d1a415b870&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Conical burr mechanism delivers far more consistent particle size than blade grinders",
       "Stepped grind-size dial covers everything from French press to drip",
@@ -140,7 +140,7 @@ export const products: Product[] = [
     rank: 7,
     name: "KRUPS Precision Electric Coffee Grinder",
     imageUrl: "https://m.media-amazon.com/images/I/71wscxhIsyL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/KRUPS-Electric-Coffee-Grinder-Stainless/dp/B00004SPEU/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/KRUPS-Electric-Coffee-Grinder-Stainless/dp/B00004SPEU?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=7b90d9c0832bb8999dd9d6dd949942cc&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Stainless steel blade and housing hold up well over years of daily use",
       "Compact enough to leave out on the counter permanently",
@@ -161,7 +161,7 @@ export const products: Product[] = [
     rank: 1,
     name: "Veken French Press Coffee Maker 21oz",
     imageUrl: "https://m.media-amazon.com/images/I/71paoE86CdL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Veken-Resistant-Thickened-Borosilicate-Stainless/dp/B0FDQN26QH/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Veken-Resistant-Thickened-Borosilicate-Stainless/dp/B0FDQN26QH?&linkCode=ll2&tag=brewdeskgrid-20&linkId=594550cb2746a43cc831ecbdb1d4843a&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Thickened borosilicate glass carafe resists thermal shock better than standard glass",
       "Multi-layer stainless steel filter reduces grounds passing into the cup",
@@ -182,7 +182,7 @@ export const products: Product[] = [
     rank: 2,
     name: "Utopia Kitchen French Press 21oz",
     imageUrl: "https://m.media-amazon.com/images/I/71RrmGJ8EnL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Resistant-Thickened-Borosilicate/dp/B0FBX21QYP/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Resistant-Thickened-Borosilicate/dp/B0FBX21QYP?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=1a9d84f95b37d1a13db474d7a8ea923e&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Borosilicate glass carafe with a sturdy stainless steel frame",
       "Straightforward plunger action with minimal resistance",
@@ -201,7 +201,7 @@ export const products: Product[] = [
     rank: 3,
     name: "Utopia Kitchen French Press 34oz",
     imageUrl: "https://m.media-amazon.com/images/I/7106wsUiMQL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Espresso-Stainless-Resistant/dp/B01N78X92P/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Espresso-Stainless-Resistant/dp/B01N78X92P?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=29c35f712f35bf72933c20e8f3cccd70&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "34oz capacity comfortably serves two to three people at once",
       "Heat-resistant borosilicate glass carafe",
@@ -220,7 +220,7 @@ export const products: Product[] = [
     rank: 4,
     name: "QUQIYSO Coffee Maker French Press",
     imageUrl: "https://m.media-amazon.com/images/I/612v19vtE8L.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/QUQIYSO-Stainless-Resistant-Durable-Borosilicate/dp/B0B589S46B/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/QUQIYSO-Stainless-Resistant-Durable-Borosilicate/dp/B0B589S46B?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=638697619f5cd92b61d67e49ab925e06&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Durable borosilicate glass paired with a stainless steel frame",
       "Simple three-piece design makes cleaning quick",
@@ -239,7 +239,7 @@ export const products: Product[] = [
     rank: 5,
     name: "Utopia Kitchen Stainless Steel French Press 34oz",
     imageUrl: "https://m.media-amazon.com/images/I/81gyuA6QC7L.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Insulated-Filtration-Dishwasher/dp/B01G2CCWGY/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Utopia-Kitchen-Insulated-Filtration-Dishwasher/dp/B01G2CCWGY?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=f2fe33e845e9348c7880dd974e19afee&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "All stainless steel construction resists breakage far better than glass",
       "Double-wall design helps retain heat longer through a slow press",
@@ -258,7 +258,7 @@ export const products: Product[] = [
     rank: 6,
     name: "Bodum Chambord French Press 34oz",
     imageUrl: "https://m.media-amazon.com/images/I/61V-VGqgHqL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Bodum-Chambord-French-Coffee-Chrome/dp/B00008XEWG/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Bodum-Chambord-French-Coffee-Chrome/dp/B00008XEWG?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=b280fc6c6802ec62f14e85a7e9331f95&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Iconic chrome-and-glass design that's held up as a classic for decades",
       "Heat-resistant borosilicate glass beaker",
@@ -277,7 +277,7 @@ export const products: Product[] = [
     rank: 7,
     name: "Secura French Press Coffee Maker 50oz",
     imageUrl: "https://m.media-amazon.com/images/I/61sRJCUj+mL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Secura-French-Stainless-Insulated-Screens/dp/B07RJJ2SGG/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Secura-French-Stainless-Insulated-Screens/dp/B07RJJ2SGG?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=019a655e3cb975db6794229481315740&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "50oz capacity is large enough to serve a small group in one press",
       "Double-wall stainless steel keeps coffee hot well after brewing",
@@ -298,7 +298,7 @@ export const products: Product[] = [
     rank: 1,
     name: "Cosori Electric Kettle 1.7L",
     imageUrl: "https://m.media-amazon.com/images/I/81bgn8np84L.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/COSORI-Electric-Stainless-Indicator-Protection/dp/B08PP48979/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/COSORI-Electric-Stainless-Indicator-Protection/dp/B08PP48979?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=edb728d8fd432466ffd427d4b6577945&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "1.7L capacity handles multiple cups or a full French press in one boil",
       "Auto shut-off and boil-dry protection built in",
@@ -319,7 +319,7 @@ export const products: Product[] = [
     rank: 2,
     name: "Chefman Electric Kettle 1.8L",
     imageUrl: "https://m.media-amazon.com/images/I/81hvKNPIHKL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Chefman-Removable-Protection-Stainless-Borosilicate/dp/B0C5Z8VCHX/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Chefman-Removable-Protection-Stainless-Borosilicate/dp/B0C5Z8VCHX?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=3d8ec8f547046e8235daab0a1e83cc4b&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "1.8L capacity is generous for larger households",
       "Removable, washable filter helps keep water free of mineral flakes",
@@ -338,7 +338,7 @@ export const products: Product[] = [
     rank: 3,
     name: "Amazon Basics Electric Kettle 1.7L",
     imageUrl: "https://m.media-amazon.com/images/I/71FcafxVweL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Amazon-Basics-Electric-Cordless-Protection/dp/B07JZQ1MXT/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Amazon-Basics-Electric-Cordless-Protection/dp/B07JZQ1MXT?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=20b548ce86d00c18deb5bd2cbbf94181&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Simple, budget-friendly option with auto shut-off protection",
       "1.7L capacity suits most daily household needs",
@@ -357,7 +357,7 @@ export const products: Product[] = [
     rank: 4,
     name: "OVENTE Electric Kettle 1.7L",
     imageUrl: "https://m.media-amazon.com/images/I/71xvWVB8z+L.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Ovente-KP72B-Electric-Kettle-Illuminated/dp/B079K27638/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Ovente-KP72B-Electric-Kettle-Illuminated/dp/B079K27638?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=f61037c2faa7f7db3041f36cb801d6ba&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Illuminated water window makes it easy to see fill level while boiling",
       "BPA-free interior with fast-heating concealed element",
@@ -376,7 +376,7 @@ export const products: Product[] = [
     rank: 5,
     name: "COMFEE' Stainless Steel Electric Kettle 1.7L",
     imageUrl: "https://m.media-amazon.com/images/I/61urxjK6SbL.AC_SL1200.jpg",
-    affiliateUrl: "https://www.amazon.com/Stainless-Cordless-Electric-Shut-Off-Protection/dp/B084KQTCQW/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Stainless-Cordless-Electric-Shut-Off-Protection/dp/B084KQTCQW?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=a3ea391f2648008fa21e914eb0df3ed8&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Full stainless steel interior avoids plastic contact with water",
       "1.7L capacity covers most daily brewing needs",
@@ -395,7 +395,7 @@ export const products: Product[] = [
     rank: 6,
     name: "Cuisinart PerfecTemp Electric Kettle CPK-17P1",
     imageUrl: "https://m.media-amazon.com/images/I/51EcND+lspL.AC_SL1173.jpg",
-    affiliateUrl: "https://www.amazon.com/Cuisinart-CPK-17-PerfecTemp-1-7-Liter-Stainless/dp/B003KYSLNQ/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Cuisinart-CPK-17-PerfecTemp-1-7-Liter-Stainless/dp/B003KYSLNQ?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=d38329309149b300489644281dde807f&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Six programmable temperature presets suited to different teas and coffee methods",
       "Brushed stainless steel housing feels durable",
@@ -414,7 +414,7 @@ export const products: Product[] = [
     rank: 7,
     name: "Cosori Electric Gooseneck Kettle",
     imageUrl: "https://m.media-amazon.com/images/I/51wSbjhVnZL.AC_SL1440.jpg",
-    affiliateUrl: "https://www.amazon.com/COSORI-Electric-Gooseneck-Variable-Stainless/dp/B07T1CH2HH/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/COSORI-Electric-Gooseneck-Variable-Stainless/dp/B07T1CH2HH?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=9f5805854345e53a26a7bd1f2922611e&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Gooseneck spout gives precise, controllable pour for pour-over brewing",
       "Variable temperature control across a wide range",
@@ -433,7 +433,7 @@ export const products: Product[] = [
     rank: 8,
     name: "CHEFMAN Electric Kettle 1.2L with Infuser",
     imageUrl: "https://m.media-amazon.com/images/I/714XTmaHfWL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/CHEFMAN-Electric-Kettle-Protection-Removable/dp/B0CDY28KDD/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/CHEFMAN-Electric-Kettle-Protection-Removable/dp/B0CDY28KDD?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=c313cad806c9d6a177829d22e88ddb58&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Removable tea infuser built directly into the kettle",
       "Compact 1.2L size suits single servings well",
@@ -454,7 +454,7 @@ export const products: Product[] = [
     rank: 1,
     name: "Zulay Kitchen Powerful Milk Frother",
     imageUrl: "https://m.media-amazon.com/images/I/811azKMn+yL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Zulay-Original-Milk-Frother-Handheld/dp/B09D8T11YS/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Zulay-Original-Milk-Frother-Handheld/dp/B09D8T11YS?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=9ad3b8f70abb769b4bf8373616220b06&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Strong motor whips microfoam noticeably faster than basic handhelds",
       "Compact enough to store in a drawer",
@@ -475,7 +475,7 @@ export const products: Product[] = [
     rank: 2,
     name: "CIRCLE JOY Rechargeable Milk Frother",
     imageUrl: "https://m.media-amazon.com/images/I/61mKYqw2LbL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/CIRCLE-JOY-Rechargeable-Electric-Cappuccino/dp/B0DPG6SNV1/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/CIRCLE-JOY-Rechargeable-Electric-Cappuccino/dp/B0DPG6SNV1?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=8ada1fcc348b7268b3ffdb909d3217c7&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "USB rechargeable, so no disposable batteries to buy",
       "Lightweight design is easy to maneuver one-handed",
@@ -494,7 +494,7 @@ export const products: Product[] = [
     rank: 3,
     name: "YUSWKO Handheld Milk Frother",
     imageUrl: "https://m.media-amazon.com/images/I/61MiRYg1+rL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Stainless-Rechargeable-Adjustable-Chocolate-Cappuccino/dp/B08VD4RX6Y/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Stainless-Rechargeable-Adjustable-Chocolate-Cappuccino/dp/B08VD4RX6Y?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=9cb9eb46f18b768607339ca0b9f7eff4&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Adjustable speed settings for different foam textures",
       "Stainless steel whisk head is easy to rinse clean",
@@ -513,7 +513,7 @@ export const products: Product[] = [
     rank: 4,
     name: "CIRCLE JOY Milk Frother with Stand",
     imageUrl: "https://m.media-amazon.com/images/I/71foHQXs3NL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/CIRCLE-JOY-Rechargeable-Cappuccino-Chocolate/dp/B0G3PDFXJS/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/CIRCLE-JOY-Rechargeable-Cappuccino-Chocolate/dp/B0G3PDFXJS?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=1ec0af9f43b608605a5b2efb5c85fef0&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Includes a charging stand for tidy countertop storage",
       "Rechargeable battery means no disposable batteries",
@@ -532,7 +532,7 @@ export const products: Product[] = [
     rank: 5,
     name: "Maestri House LunaFro Milk Frother",
     imageUrl: "https://m.media-amazon.com/images/I/512v2aWV1yL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Maestri-House-Rechargeable-Waterproof-Detachable/dp/B0BN7M8CH4/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Maestri-House-Rechargeable-Waterproof-Detachable/dp/B0BN7M8CH4?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=746b513349a30345998068714b3316fb&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Waterproof housing makes rinsing under the tap worry-free",
       "Detachable whisk head simplifies deep cleaning",
@@ -551,7 +551,7 @@ export const products: Product[] = [
     rank: 6,
     name: "Bonsenkitchen Powerful Milk Frother",
     imageUrl: "https://m.media-amazon.com/images/I/41skA+hnOdL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Bonsenkitchen-Powerful-Handheld-Stainless-Wand-Black/dp/B076F3C4XP/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Bonsenkitchen-Powerful-Handheld-Stainless-Wand-Black/dp/B076F3C4XP?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=10fa0a7f1fad9335028fa410a577ef1d&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Strong, high-RPM motor froths milk quickly",
       "Stainless steel wand is dishwasher-friendly",
@@ -570,7 +570,7 @@ export const products: Product[] = [
     rank: 7,
     name: "InstaWhisk Milk Frother Variable Speed",
     imageUrl: "https://m.media-amazon.com/images/I/71WMKOG2DtL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/InstaWhisk-Variable-Rechargeable-Detachable-Cappuccino/dp/B0F9FS822W/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/InstaWhisk-Variable-Rechargeable-Detachable-Cappuccino/dp/B0F9FS822W?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=8ccebc09cee7440132d9b68b9e2694c6&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Variable speed dial lets you match foam density to the drink",
       "Rechargeable battery with a visible charge indicator",
@@ -591,7 +591,7 @@ export const products: Product[] = [
     rank: 1,
     name: "Ninja Espresso & Coffee Maker CFN601",
     imageUrl: "https://m.media-amazon.com/images/I/71TEecJZzWL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Ninja-CFN601-Single-Serve-Compatible-Cappuccino/dp/B0B9YP76FN/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Ninja-CFN601-Single-Serve-Compatible-Cappuccino/dp/B0B9YP76FN?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=2e7eebd96aa06cb083dc95f54d7e3ab0&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Brews espresso, regular coffee, and pod-compatible cups from one machine",
       "Built-in frother handles milk drinks without a separate tool",
@@ -612,7 +612,7 @@ export const products: Product[] = [
     rank: 2,
     name: "Primula Classic Stovetop Espresso Maker",
     imageUrl: "https://m.media-amazon.com/images/I/61+O67HcyQL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Primula-Stovetop-Espresso-Classic-Cafetera/dp/B001J1L59E/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Primula-Stovetop-Espresso-Classic-Cafetera/dp/B001J1L59E?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=1c1eb1bca29844f33af7cfd58b808d5f&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "No electricity needed — works on any stovetop",
       "Simple three-chamber moka design with no learning curve beyond the basics",
@@ -631,7 +631,7 @@ export const products: Product[] = [
     rank: 3,
     name: "Breville Barista Express BES870XL",
     imageUrl: "https://m.media-amazon.com/images/I/71BvCt6eAFL.SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Breville-BES870XL-Barista-Express-Espresso/dp/B00CH9QWOU/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Breville-BES870XL-Barista-Express-Espresso/dp/B00CH9QWOU?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=fa93834a1c5a6e0b9c42a680eb253b7d&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Built-in conical burr grinder dosing straight into the portafilter",
       "Precise temperature control for consistent shots",
@@ -654,7 +654,7 @@ export const products: Product[] = [
     rank: 4,
     name: "Bialetti Moka Express 6 Cups",
     imageUrl: "https://m.media-amazon.com/images/I/616WtXLQ9jL.AC_SL1200.jpg",
-    affiliateUrl: "https://www.amazon.com/Bialetti-275-06-Express-6-Cup-Espresso/dp/B00004RFRU/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Bialetti-275-06-Express-6-Cup-Espresso/dp/B00004RFRU?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=7afbd2173957b84807068c391455ca3b&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "The original, widely recognized octagonal moka pot design",
       "Simple, durable aluminum construction with decades of proven use",
@@ -673,7 +673,7 @@ export const products: Product[] = [
     rank: 5,
     name: "Ninja Specialty Coffee Maker CM401",
     imageUrl: "https://m.media-amazon.com/images/I/71ajYOuoNPL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Ninja-Specialty-Fold-Away-Frother-CM401/dp/B07PFLM2LK/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Ninja-Specialty-Fold-Away-Frother-CM401/dp/B07PFLM2LK?ie=UTF8&s=psc&ASIN=B07PFLM2LK&th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=4513e89bfd337708dafdc199c32e6cac&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Multiple brew styles including rich, over-ice, and specialty concentrated modes",
       "Fold-away milk frother built into the machine",
@@ -692,7 +692,7 @@ export const products: Product[] = [
     rank: 6,
     name: "CASABREWS CM5418 Espresso Machine",
     imageUrl: "https://m.media-amazon.com/images/I/719gPTwtbzL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Espresso-Professional-Removable-Cappuccino-Macchiato/dp/B09X3WGJ3R/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Espresso-Professional-Removable-Cappuccino-Macchiato/dp/B09X3WGJ3R?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=b3cb164afdf0d56e8e7e86b4c4b4b056&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Compact semi-automatic machine with a steam wand for milk drinks",
       "Removable water tank makes refilling easy",
@@ -711,7 +711,7 @@ export const products: Product[] = [
     rank: 7,
     name: "Ninja Luxe Café Premier ES601",
     imageUrl: "https://m.media-amazon.com/images/I/61D9GtphxuL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Ninja-Integrated-Hands-Free-Cappuccinos-ES601/dp/B0D45PK5V4/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Ninja-Integrated-Hands-Free-Cappuccinos-ES601/dp/B0D45PK5V4?ie=UTF8&s=psc&ASIN=B0D45PK5V4&th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=b945710dd9d31895058400e170ad8661&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Integrated, hands-free milk frothing system for lattes and cappuccinos",
       "Multiple brew and espresso strength settings",
@@ -732,7 +732,7 @@ export const products: Product[] = [
     rank: 1,
     name: "Owala SmoothSip Slider Tumbler 12oz",
     imageUrl: "https://m.media-amazon.com/images/I/311JdFvhtVL.AC_SL1200.jpg",
-    affiliateUrl: "https://www.amazon.com/Owala-SmoothSip-Insulated-Stainless-Reusable/dp/B0DF472VMZ/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Owala-SmoothSip-Insulated-Stainless-Reusable/dp/B0DF472VMZ?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=70d5319a0a072e93bd32a6909fbff6c6&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Slider lid design allows sipping without fully opening the top",
       "Stainless steel insulation keeps coffee hot for hours",
@@ -753,7 +753,7 @@ export const products: Product[] = [
     rank: 2,
     name: "YETI Rambler 20oz Tumbler",
     imageUrl: "https://m.media-amazon.com/images/I/61qswdidioL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/YETI-Rambler-Stainless-Insulated-MagSlider/dp/B073WJMKHN/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/YETI-Rambler-Stainless-Insulated-MagSlider/dp/B073WJMKHN?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=dc5a44738e1bc84f45911316f551598a&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Heavy-duty vacuum insulation keeps drinks hot or cold for extended periods",
       "MagSlider lid stays securely closed without clamping",
@@ -772,7 +772,7 @@ export const products: Product[] = [
     rank: 3,
     name: "Contigo Byron Travel Mug 16oz",
     imageUrl: "https://m.media-amazon.com/images/I/615q4slnnEL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Contigo-Snapseal-Insulated-Travel-Licorice/dp/B083TCZDMT/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Contigo-Snapseal-Insulated-Travel-Licorice/dp/B083TCZDMT?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=e9f0c156a1f342b8f2eb7b760b87bbf8&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "SNAPSEAL lid seals with one hand and helps prevent leaks",
       "16oz capacity suits a full standard coffee order",
@@ -791,7 +791,7 @@ export const products: Product[] = [
     rank: 4,
     name: "STANLEY Transit FlipTop Mug 16oz",
     imageUrl: "https://m.media-amazon.com/images/I/417G2r1kjKL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/STANLEY-Leakproof-Insulated-Stainless-BPA-Free/dp/B0GCBTN16V/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/STANLEY-Leakproof-Insulated-Stainless-BPA-Free/dp/B0GCBTN16V?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=afa4076f07072dba1233a11d1ddf4af8&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Flip-top lid opens and closes quickly with one hand",
       "Rugged stainless steel build associated with Stanley's outdoor gear heritage",
@@ -805,31 +805,12 @@ export const products: Product[] = [
     summary: "A flip-top insulated mug built with the rugged sensibility Stanley is known for, aimed at commuters who want durability over minimalism.",
   },
   {
-    id: "contigo-westloop-16oz",
-    category: "travel-coffee-mugs",
-    rank: 5,
-    name: "Contigo West Loop Travel Mug 16oz",
-    imageUrl: "https://m.media-amazon.com/images/I/718JGxlo0dL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Contigo-AUTOSEAL-Vaccuum-Insulated-Stainless-Travel/dp/B00HZI5XNO/?tag=YOURTAG-20",
-    pros: [
-      "AUTOSEAL lid only opens when the button is pressed, reducing accidental spills",
-      "Vacuum-insulated stainless steel keeps coffee hot through a commute",
-      "Handle-free design fits most car cup holders",
-    ],
-    cons: [
-      "Push-button lid mechanism needs occasional cleaning to keep working smoothly",
-      "No handle, which some buyers prefer for carrying",
-    ],
-    bestFor: "Drivers who want a cup-holder-friendly mug with reliable spill protection.",
-    summary: "A push-button AUTOSEAL travel mug designed around spill prevention, well suited to sipping coffee behind the wheel.",
-  },
-  {
     id: "contigo-huron",
     category: "travel-coffee-mugs",
-    rank: 6,
+    rank: 5,
     name: "Contigo Huron Travel Mug",
     imageUrl: "https://m.media-amazon.com/images/I/51o+pFagJQL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/Contigo-2094848-Snapseal-Insulated-Licorice/dp/B083T9CR47/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/Contigo-2094848-Snapseal-Insulated-Licorice/dp/B083T9CR47?&linkCode=ll2&tag=brewdeskgrid-20&linkId=6be7767caf8404c8051bc8675f0d79cd&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "SNAPSEAL lid locks closed with an audible click for leak protection",
       "Slim silhouette fits most cup holders and bag pockets",
@@ -845,10 +826,10 @@ export const products: Product[] = [
   {
     id: "thermos-stainless-king-16oz",
     category: "travel-coffee-mugs",
-    rank: 7,
+    rank: 6,
     name: "THERMOS Stainless King Travel Mug 16oz",
     imageUrl: "https://m.media-amazon.com/images/I/61I9ZQjrUSL.AC_SL1500.jpg",
-    affiliateUrl: "https://www.amazon.com/THERMOS-Stainless-Travel-Ounce-Matte/dp/B08JWMVB43/?tag=YOURTAG-20",
+    affiliateUrl: "https://www.amazon.com/THERMOS-Stainless-Travel-Ounce-Matte/dp/B08JWMVB43?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=6630376da6d74cd72a1fca8d00d15eba&language=en_US&ref_=as_li_ss_tl",
     pros: [
       "Vacuum insulation from a brand with a long heritage in thermal drinkware",
       "Matte finish resists fingerprints and scuffs better than glossy steel",
