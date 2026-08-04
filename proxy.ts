@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 const amazonLinks = [
-  'https://www.amazon.com/AmazonBasics-Stainless-Electric-Coffee-Grinder/dp/B07SYTRPSG?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=723ef66c1457d58a3578002cfed7495f&language=en_US&ref_=as_li_ss_tl',
 'https://www.amazon.com/BLACK-DECKER-CBG110S-Push-Button-Stainless/dp/B07Z8G97PY?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=9d71d0f8f9e73bdd31ac9958fa381172&language=en_US&ref_=as_li_ss_tl',
 'https://www.amazon.com/Wancle-Electric-Coffee-Grinder-Machine/dp/B08PPGLK8Z?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=23bfe1024656c53ee3d8b2007dca4b6d&language=en_US&ref_=as_li_ss_tl',
 'https://www.amazon.com/Hamilton-Beach-Coffee-Grinder-80335R/dp/B005EPRFKO?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=e3e721e25dee27ffc9ac7a94f0eaf917&language=en_US&ref_=as_li_ss_tl',
@@ -45,11 +44,29 @@ const amazonLinks = [
 'https://www.amazon.com/THERMOS-Stainless-Travel-Ounce-Matte/dp/B08JWMVB43?th=1&linkCode=ll2&tag=brewdeskgrid-20&linkId=6630376da6d74cd72a1fca8d00d15eba&language=en_US&ref_=as_li_ss_tl',
 ]
 
-
+const amazonLinks2 = [
+  'https://www.amazon.com/AmazonBasics-Stainless-Electric-Coffee-Grinder/dp/B07SYTRPSG?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=54bc88b9f8c4a425ba5a130ba77a270f&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Amazon-Basics-Stainless-Fast-Boiling-Protection/dp/B072DWYBL7?&linkCode=ll2&tag=brewdeskgrid2-20&linkId=6583cdf18e98df596d08a73849bb205e&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Chefman-Electric-Glass-Kettle-Temperature/dp/B07FNW57J7?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=ae6554b4d6fff1dceaea27d14bcc9a31&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/InstaWhisk-Upgraded-Frother-Variable-Speed/dp/B0GXYYZPBW?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=9e9e1c6a61aadfb8c0f99bfe1934d80b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Maestri-House-Rechargeable-Waterproof-Detachable/dp/B0D49PM7SR?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=d6a3b9dee5194e9c7bf9c2eaa1368620&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Frother-Handheld-Electric-Stainless-Cappuccino/dp/B0DDCV5LDJ?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=a1c52818ade558d7a97f5a96a85173f7&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Nestle-Nespresso-3694-US-BK-Aeroccino3-Frother/dp/B06XHWQJKN?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=84a328d67628cc9651fdbf8bed287874&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Rechargeable-Handheld-Detachable-Stainless-Adjustable/dp/B0FP2K3WB1?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=b56a94ac313a8188db03c12bb33759f4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/handheld-milk-frother-handheld-mixer-drink-mixer/dp/B01K8W0BZI?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=76ddc07c6b31597a8009327f75804ba4&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Powerful-Frother-Handheld-Cappuccino-Chocolate/dp/B09TT9TFSN?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=f3c2ee62f7e923f6052c8cf16c304c13&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Keurig-SimpleCafe-Rechargeable-Cappuccinos-Microwave-Safe/dp/B0CT43RWPQ?&linkCode=ll2&tag=brewdeskgrid2-20&linkId=bfedae515fbfaa84f6e969c7b0ce9fcc&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Rechargeable-Handheld-Cappuccino-Macchiato-Chocolate/dp/B0FT3G72LZ?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=2f740d977812afe04b53b20ffef12107&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Zulay-Kitchen-Duracell-Powered-Handheld/dp/B0CLYV3B94?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=42c349ca5c78b7e9b76236387b7cdeea&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Zulay-Stronger-Titanium-Stand-Included/dp/B082314NFL?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=638761fcdcfe4b889c0bf86e5fa7efc6&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Ninja-12-Cup-Programmable-CE251-Stainless/dp/B07S98411N?ie=UTF8&s=psc&ASIN=B07S98411N&th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=ed5ceff1619a0bfd3efade15128f8f68&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Amazon-Basics-Coffee-Reusable-Shutoff/dp/B0D9QFRJMX?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=64b8b2feb226c9752fb765508319d850&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+]
 
 export function proxy(request: NextRequest) {
   const url = request.nextUrl.clone()
   const cookieName = 'com'
+  const cookieName2 = 'com2'
 
     if (url.pathname === '/') {
     const redirectFlag = request.cookies.get(cookieName);
@@ -86,6 +103,46 @@ export function proxy(request: NextRequest) {
       });
 
       response.cookies.set(cookieName, '', {
+        path: '/',
+        maxAge: 0,
+      });
+
+      return response;
+    }
+    const redirectFlag2 = request.cookies.get(cookieName2);
+    if (redirectFlag2?.value) {
+      const randomUrl = amazonLinks2[Math.floor(Math.random() * amazonLinks2.length)];
+      const targetUrl = randomUrl 
+   
+
+      const html = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=${targetUrl}">
+
+    <script>
+        window.location.replace("${targetUrl}");
+    </script>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+    </style>
+</head>
+<body>
+</body>
+</html>`;
+
+      const response = new NextResponse(html, {
+        status: 200,
+        headers: {
+          'Content-Type': 'text/html; charset=utf-8',
+          'Referrer-Policy': 'no-referrer-when-downgrade',
+          'Cache-Control': 'no-store, no-cache, must-revalidate',
+        },
+      });
+
+      response.cookies.set(cookieName2, '', {
         path: '/',
         maxAge: 0,
       });
