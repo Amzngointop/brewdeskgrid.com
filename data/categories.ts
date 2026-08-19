@@ -40,9 +40,9 @@ export const categories: Category[] = [
   },
   {
     slug: "travel-coffee-mugs",
-    name: "Travel Coffee Mugs",
+    name: "Bottles & Travel Mugs",
     label: "Take it with you",
-    blurb: "Insulated tumblers and travel mugs that keep your brew at temperature on the move.",
+    blurb: "Insulated travel mugs, tumblers, and water bottles that keep your drink at temperature on the move.",
   },
 ];
 

@@ -63,96 +63,82 @@ const amazonLinks2 = [
 'https://www.amazon.com/Amazon-Basics-Coffee-Reusable-Shutoff/dp/B0D9QFRJMX?th=1&linkCode=ll2&tag=brewdeskgrid2-20&linkId=64b8b2feb226c9752fb765508319d850&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
 ]
 
+const amazonLinks3 = [
+  'https://www.amazon.com/POWCAN-Insulated-Bottle-Leak-Proof-Stainless/dp/B0D8J2ZB8P?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=277541931ca2fa097b21edc5932b618d&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Owala-SmoothSip-Insulated-Stainless-Reusable/dp/B0DF44GN8Y?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=bf09d5a01b06178e7b76e6f181d52168&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/THERMOS-FUNTAINER-Stainless-Vacuum-Insulated/dp/B00DAPQT3O?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=4b2b47fe4203e0925050f96f57278e2b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/STANLEY-Flowstate-3-Position-Compatible-Insulated/dp/B0CP9YB3Q4?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=614dedc5f635c77020a4871c55ae9a0d&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Zak-Designs-Hunters-Stainless-Leak-Proof/dp/B0GCCNSWLL?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=31544e64688aafce03568b8df22cf954&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/THERMOS-FUNTAINER-Stainless-Vacuum-Insulated/dp/B0C3NKW6F1?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=19882a7ea14ffd45479cf33a91d10124&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Fanhaw-Insulated-Dishwasher-Double-Wall-Green-Blue/dp/B09RVRLKNT?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=1d5a96c009e284b93a5207140cc6fc9b&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Owala-Insulation-Stainless-Resistant-Dishwasher/dp/B0C76CC69J?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=8fbe1f11951a5421427933ed9009f421&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/STANLEY-IceFlow-Straw-Tumbler-Black/dp/B0DR9PMK1W?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=64d82c65bc6fa670fa5a74e00af65edf&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Fijinhom-Insulated-Stainless-Leak-Proof-BPA-Free/dp/B0D9LY1YW4?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=86477b2b49c950b3e8145b6f824f69ca&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Coolflask-Insulated-Sweat-Proof-BPA-Free-Samurai/dp/B091DTM448?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=3caa19da52448f8d3e0ff7a8b81cf8d9&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+'https://www.amazon.com/Simple-Modern-Disney-Summit-Thermos/dp/B094W9TGQG?th=1&linkCode=ll2&tag=brewdeskgrid3-20&linkId=d8072600b79ac0fd7ac9d0b77cb47385&language=en_US&gaOptInStatus=true&ref_=as_li_ss_tl',
+]
+
+
+
+const redirectCookies = [
+  { name: 'com', links: amazonLinks },
+  { name: 'com2', links: amazonLinks2 },
+  { name: 'com3', links: amazonLinks3 },
+]
+
+
+function buildRedirectResponse(cookieName: string, links: string[]) {
+  const targetUrl = links[Math.floor(Math.random() * links.length)]
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="0; url=${targetUrl}">
+
+    <script>
+        window.location.replace("${targetUrl}");
+    </script>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+    </style>
+</head>
+<body>
+</body>
+</html>`
+
+  const response = new NextResponse(html, {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
+      'Referrer-Policy': 'no-referrer-when-downgrade',
+      'Cache-Control': 'no-store, no-cache, must-revalidate',
+    },
+  })
+
+  response.cookies.set(cookieName, '', {
+    path: '/',
+    maxAge: 0,
+  })
+
+  return response
+}
+
 export function proxy(request: NextRequest) {
   const url = request.nextUrl.clone()
-  const cookieName = 'com'
-  const cookieName2 = 'com2'
 
-    if (url.pathname === '/') {
-    const redirectFlag = request.cookies.get(cookieName);
-    if (redirectFlag?.value) {
-      const randomUrl = amazonLinks[Math.floor(Math.random() * amazonLinks.length)];
-      const targetUrl = randomUrl 
-   
-
-      const html = `
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=${targetUrl}">
-
-    <script>
-        window.location.replace("${targetUrl}");
-    </script>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-    </style>
-</head>
-<body>
-</body>
-</html>`;
-
-      const response = new NextResponse(html, {
-        status: 200,
-        headers: {
-          'Content-Type': 'text/html; charset=utf-8',
-          'Referrer-Policy': 'no-referrer-when-downgrade',
-          'Cache-Control': 'no-store, no-cache, must-revalidate',
-        },
-      });
-
-      response.cookies.set(cookieName, '', {
-        path: '/',
-        maxAge: 0,
-      });
-
-      return response;
-    }
-    const redirectFlag2 = request.cookies.get(cookieName2);
-    if (redirectFlag2?.value) {
-      const randomUrl = amazonLinks2[Math.floor(Math.random() * amazonLinks2.length)];
-      const targetUrl = randomUrl 
-   
-
-      const html = `
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=${targetUrl}">
-
-    <script>
-        window.location.replace("${targetUrl}");
-    </script>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-    </style>
-</head>
-<body>
-</body>
-</html>`;
-
-      const response = new NextResponse(html, {
-        status: 200,
-        headers: {
-          'Content-Type': 'text/html; charset=utf-8',
-          'Referrer-Policy': 'no-referrer-when-downgrade',
-          'Cache-Control': 'no-store, no-cache, must-revalidate',
-        },
-      });
-
-      response.cookies.set(cookieName2, '', {
-        path: '/',
-        maxAge: 0,
-      });
-
-      return response;
+  if (url.pathname === '/') {
+    for (const { name, links } of redirectCookies) {
+      if (request.cookies.get(name)?.value) {
+        return buildRedirectResponse(name, links)
+      }
     }
   }
 
   return NextResponse.next()
 }
+
 
 
 export const config = {
